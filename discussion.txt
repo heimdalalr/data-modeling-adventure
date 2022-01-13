@@ -1,0 +1,4 @@
+1. Normalization is breaking down data into tables with relationships by series of normal forms.
+
+2.)1NF is the basic rules for organizing a database such as organizing the data in rows, making column values the same type, giving a primary key to each row, and removing all repeating groups.
+ A database that is organized according to 2NF has to meet all the requirements of the first normal form along with the requirements of removing data that has a partial dependency on the primary key and moving these data to a new table. 3NF requires that 2NF is achieved and that no columns have transitive dependencies.
