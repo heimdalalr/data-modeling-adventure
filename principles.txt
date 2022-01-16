@@ -1,0 +1,9 @@
+1. Imagine you work for the USDA and you are trying to decide how to allocate federal funding to different states/counties in the United States. What are some KPIs the may be important in order to make this decision?
+The food_insecurity and low_food_security columns in the food_security table indicated what percentage of people per state are facing food insecurity and should be considered important. You could also consider the columns in the acess_indicators that store the percentage of people who live greater than a mile from the store, ones that lack transportation or are low income. If these people are unable to access the stores they would also be unable to use the food funding.
+
+
+2.Provide an example of what granularity would look like in the USDA database.
+In the relational database the Food Environment Atlas holds a large amount of data for the counties across several states. The data is very detailed despite simplifications being made for ease of use. Many fields have a related 'per 1000 people' to help users determine the scope of the entries.
+
+3.Evaluate your data model in the terms of normalization. Does your data model fulfill the first normal for? What about the second normal form? What about the third normal form?
+The food environment is normalized according to 1NF. To meet 2NF requirements subsets of data that apply to multiple rows of a table much be placed in a separate table referenced using a foreign key. To meet the 3NF, requirements each table would only have comlumns that depend on the primary key, all others would be moved to a separate table. Every column in every table depends on the specific county or state that indentified using the primary key and referenced using the foreign keys. So the database fufills the requirements of 3Nf as well.
